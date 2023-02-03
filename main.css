@@ -1,0 +1,488 @@
+body {
+    font-family: Univers, Verdana;
+    background-color: #fff;
+}
+
+header {
+    margin-bottom: 2em;
+}
+
+a, a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+}
+
+a:hover, a:active {
+    color: #00f;
+    text-decoration-color: #00f;
+    -webkit-text-decoration-color: #00f;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 1px;
+}
+
+section {
+    margin: 5em auto;
+    max-width: 700px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: CooperBlackWeb, CooperBlack, Cooper, 
+    UniversBold, Arial;
+}
+
+
+img {
+    z-index: 100;
+}
+
+/* Funky/Wavy HR Styles */
+hr.wavy-line {
+    z-index: 0;
+    height: 5px;
+    border: none;
+    background-image: url("/img/hr-wavy-755px.png");
+    background-repeat: space;
+}
+
+hr.pre-section-header-hr {
+    position: relative;
+    left: 70px;
+    width: calc(100% - 140px);
+    margin-top: 3.5em;
+    margin-bottom: -2.5em;
+}
+
+/* Funky/Skewed Header Styles */
+h1.section-header, h2.section-header, h3.section-header,
+h4.section-header, h5.section-header, h6.section-header {
+    z-index: 10;
+    transform: skew(175deg, 175deg);
+    width: 120px;
+}
+
+/* Front Page Featured Image Styles*/
+img.responsive {
+    max-width: 100%;
+}
+
+img.hero {
+    display: block;
+    margin: 1em auto 1em;
+    width: 400px;
+}
+
+/* Front Page App Icon Styles */
+img.app-icon {
+    border-radius: 24px;
+    margin: 0.7em 1em 0 0;
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+/* General Text Styles */
+h1.no-space-after, h2.no-space-after, 
+h3.no-space-after, h4.no-space-after,
+h5.no-space-after, h6.no-space-after {
+    margin-bottom: 3px;
+}
+
+p.intro-text {
+    margin-left: 2em;
+    margin-right: 2em;
+    line-height: 1.5em;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 1em;
+    border-left: 2px solid black;
+    font-family: UniversObl, Verdana;
+    font-style: italic;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.pb-1em {
+    padding-bottom: 1em !important;
+}
+
+/* Flex Styles */
+.flex-container {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.hero-info {
+    flex: 1 0 430px;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+/* Thumbnail Styles */
+a.thumbnail {
+    display: block;
+    width: max-content;
+    margin: 1rem 1em 1em 0;
+    text-decoration: none;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+}
+
+.push-on-hover:hover {
+    position: relative;
+    top: 3px;
+    right: -3px;
+    border-color: #00f!important;
+    box-shadow: 1px 1px !important;
+}
+
+.thumbnail > img {
+    display: block;
+    object-fit: none;
+    object-position: center;
+    width: 88px;
+    height: 90px;
+}
+
+.thumbnail > h1, .thumbnail > h2, .thumbnail > h3,
+.thumbnail > h4, .thumbnail > h5, h6.thumbnail > h6 {
+    width: 72px;
+    margin-top: 9px;
+    padding: 0 0.4em;
+    word-wrap: break-word;
+}
+
+/* Table Styles */
+tr td {
+    width: 33%;
+}
+
+td p {
+    margin: 1em;
+}
+
+/* list.html Page Styles */
+section.post-list ul,
+section.post-list li {
+    list-style: none;
+}
+
+section.post-list ul {
+    padding-left: 0;
+}
+
+.post-card {
+    padding: 1em;
+    margin-right: 3px;
+    margin-bottom: 2em;
+}
+
+img.project-cover {
+    height: 320px;
+    width: 320px;
+    margin-left: -1em;
+    border-radius: 0.25em;
+    filter: ;
+    /*border-radius: 50%;*/
+    object-fit: cover;
+}
+
+div.post-summary {
+    margin-left: 1em;
+    width: 100%;
+    align-self: center;
+}
+
+div.post-summary h1 > a, div.post-summary h2 > a,
+div.post-summary h3 > a, div.post-summary h4 > a,
+div.post-summary h5 > a, div.post-summary h6 > a {
+    text-decoration: none;
+}
+
+div.post-summary p {
+    margin-top: 0;
+}
+
+a.more-btn {
+    padding: 0.5em 0.6em 0.3em;
+    border-radius: 1em;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    float: right;
+    text-decoration: none;
+}
+
+a.more-btn:hover {
+    color: #00f;
+    border: 3px solid #00f;
+    background-color: white;
+}
+
+/* post.html Page Styles */
+.post-item img {
+    max-width: 100%;
+}
+
+.post-item > p:first-of-type {
+    display: none;
+}
+
+.post-item > h4:first-of-type {
+    margin-top: 3px;
+}
+
+/* Video Thumbnails */
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  max-width: 660px;
+}
+
+.video-thumbnail-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.video-thumbnail:hover .overlay {
+  opacity: 0.75;
+}
+
+.overlay-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Navigation Menu Position*/
+nav {
+    padding: 0 1em;
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+nav#hamnav {
+    justify-content: space-between;
+}
+
+/* Logo/Home Button when #ht-bug is CSS & text only */
+/*
+#ht-bug {
+    margin-top: .1em;
+    transform: rotate(-13deg);
+    border: 3px solid black;
+    border-radius: 1em;
+    padding: 10px 7px 4px;
+    box-shadow: 3px 3px black;
+    width: 29px;
+}
+
+#hamnav > a {
+    height: 25px;
+}
+*/
+
+/* Logo/Home Button when #ht-bug is an SVG image */
+#ht-bug {
+    width: 53px;
+    height: 53px;
+    background-image: url("/img/ht.svg");
+}
+
+#ht-bug:hover, #ht-bug:active, #ht-bug:focus {
+    background-image: url("/img/ht-hover.svg");
+}
+
+a.no-underline {
+    text-decoration: none;
+}
+
+#fun-donut {
+    width: 80px;
+    height: 80px;
+    margin-left: calc(100% - 100px);
+}
+
+/* Menu List Item Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    margin: 0 .25em;
+    padding: 0.6em 1em 0.4em;
+    display: block;
+}
+
+/* Active Menu Item Appearance */
+nav a.menu-active {
+    border-color: #00f;
+    box-shadow: 3px 3px #00f;
+    color: #00f;
+}
+
+/* Hide Hamburger [ON BIG SCREENS] */
+#hamnav label, #hamburger { 
+    display: none;
+}
+
+/* Show Hamburger [ON SMALL SCREENS] */
+@media only screen and (max-width: 640px){
+    #ht-bug {
+        margin-left: -2.25em;
+    }
+    /* Show Hamburger Icon */
+    #hamnav label { 
+        position: absolute;
+        right: 0.25em;
+        top: 0.25em;
+        display: inline-block;
+        padding: 8px 10px 5px;
+        color: black;
+        font-size: 2em;
+    }
+
+    /* Highlight Hamburger Icon on touch/click */
+    #hamnav label:active {
+        color: white;
+        background-color: #00f;
+    } 
+
+    /* Break down hamburger menu items vertically */
+    ul#hamitems {
+        z-index: 1000;
+        position: absolute;
+        right: 1em;
+        top: 4.5em;
+        background: #fffcf7;
+    }
+
+    #hamitems > li {
+        padding: .25em 0;
+    }
+
+    #hamitems li a {
+        margin: 0 6px 1px 3px;
+    }
+
+    /* Menu Item Hover Animation for Small Screens */
+    nav li > a:hover {
+        position: relative;
+        top: 0px;
+    }
+
+    /* Active Menu Item Appearance for Small Screens */
+    nav a.menu-active {
+        border-color: #00f;
+        box-shadow: 3px 3px #00f;
+        color: #00f;
+    }
+
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; }
+
+    .small-screen-flex-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+/* Footer Styles */
+
+a.emoji-icon {
+    font-size: 1.2em;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 1em;
+}
+
+/* On Small Screens */
+@media screen and (max-width: 600px) {
+    a.thumbnail {
+        margin: 0.5em 0.5em 0.5em 0;
+    }
+
+    .thumbnail > h1, .thumbnail > h2, .thumbnail > h3,
+    .thumbnail > h4, .thumbnail > h5, h6.thumbnail > h6 {
+        width: 54px;
+        font-size: 0.9em;
+    }
+
+    .thumbnail > img{
+        height: 70px;
+        width: 70px;
+    }
+
+    img.project-cover {
+        height: 200px;
+        width: 150px;
+    }
+
+    div.post-summary {
+        margin-left: .6em;
+        padding: 0 .6em;
+    }
+
+    .hero-info {
+        flex: 1 1 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    a.hero-cta {
+        margin: 1em;
+        border-radius: 24px;
+    }
+
+    .thumbnail.hero-cta > h1, .thumbnail.hero-cta > h2, .thumbnail.hero-cta > h3,
+    .thumbnail.hero-cta > h4, .thumbnail.hero-cta > h5, .thumbnail.hero-cta > h6 {
+        width: auto;
+        padding: 1em;
+        font-size: initial;
+        text-align: center;
+    }
+}
