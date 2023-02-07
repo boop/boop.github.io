@@ -42,7 +42,7 @@ hr.wavy-line {
     z-index: 0;
     height: 5px;
     border: none;
-    background-image: url("https://ericytsang.github.io/website/img/hr-wavy-755px.png");
+    background-image: url("https://boop.github.io/img/hr-wavy-755px.png");
     background-repeat: space;
 }
 
@@ -327,11 +327,11 @@ nav#hamnav {
 #ht-bug {
     width: 53px;
     height: 53px;
-    background-image: url("https://ericytsang.github.io/website/img/ht.svg");
+    background-image: url("https://boop.github.io/img/ht.svg");
 }
 
 #ht-bug:hover, #ht-bug:active, #ht-bug:focus {
-    background-image: url("https://ericytsang.github.io/website/img/ht-hover.svg");
+    background-image: url("https://boop.github.io/img/ht-hover.svg");
 }
 
 a.no-underline {
